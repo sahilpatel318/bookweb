@@ -1,0 +1,798 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Store Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+          integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+          crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+
+    <section>
+        <nav>
+            <div class="logo">
+                <img src="logo.png">
+            </div>
+
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#featured">Featured</a></li>
+                <li><a href="#arrivals">Arrivals</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#blog">Blog</a></li>
+
+                <li>
+                    <form action="#" method="get" class="search-form">
+                        <input type="text" name="search" placeholder="Search..." class="search-input">
+                        <button type="submit" class="search-btn"><i class="fa-solid fa-search"></i></button>
+                    </form>
+                </li>
+            </ul>
+        </nav>
+        <div class="social_icon">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-solid fa-heart"></i>
+        </div>
+        </nav>
+        <div id="home" class="main">
+            <div class="main_tag">
+                <h1>WELCOME TO<br><span>THE BOOK NOOK</span></h1>
+                <p>
+                    Welcome to The Book Nook, your little haven for book lovers! Here, stories come to life as you browse through shelves filled with tales of adventure, romance, mystery, and more. Whether you’re searching for a classic treasure or the latest bestseller, we’ve got something to ignite your imagination. Let’s turn the page together and find your next great read!
+                </p>
+                <a href="#" class="main_btn">Learn More</a>
+            </div>
+            <div class="main_img">
+                <img src="table.png">
+            </div>
+        </div>
+    </section>
+
+    <!--Services-->
+    <div id="services" class="services">
+        <div class="services_box">
+
+            <!-- Fast Delivery Section -->
+            <div class="services_card">
+                <i class="fa-solid fa-truck-fast"></i>
+                <h3>Fast Delivery</h3>
+                <p>
+                    At Book Nook, we know that waiting for your next great read is the hardest part! That’s why we offer fast delivery to bring your favorite books right to your doorstep in no time. From gripping thrillers to heartwarming tales, we ensure your literary adventures begin without delay. Sit back, relax, and let us handle the rest!
+                </p>
+            </div>
+
+            <!-- 24/7 Services Section -->
+            <div class="services_card">
+                <i class="fa-solid fa-headset"></i>
+                <h3>24 x 7 Services</h3>
+                <p>
+                    At Book Nook, we’re here for you whenever inspiration strikes! With our 24/7 services, you can browse, shop, and explore our collection at any time—day or night. Whether you're a midnight reader or an early bird, we’re dedicated to making your book-buying experience seamless and always accessible. Your next adventure is just a click away, anytime you need it!
+                </p>
+            </div>
+
+            <!-- Best Deal Section -->
+            <div class="services_card">
+                <i class="fa-solid fa-tag"></i>
+                <h3>Best Deal</h3>
+                <p>
+                    At Book Nook, we bring you the best deals to make your reading journey even more enjoyable! Discover amazing discounts on your favorite genres, exclusive offers on new arrivals, and bundle deals that let you save while building your dream library. Great stories shouldn’t come at a steep price—shop smarter with us and grab the best deals today!
+                </p>
+            </div>
+
+            <!-- Secure Payment Section -->
+            <div class="services_card">
+                <i class="fa-solid fa-lock"></i>
+                <h3>Secure Payment</h3>
+                <p>
+                    Your trust matters to us at Book Nook. That’s why we offer secure payment options to ensure a safe and worry-free shopping experience. With advanced encryption and trusted payment gateways, your personal and financial information is always protected. Shop with confidence, knowing that your security is our priority!
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+    <!--About-->
+    <div id="about" class="about">
+
+        <div class="about_image">
+            <img src="about.png">
+        </div>
+        <div class="about_tag">
+            <h1>About Us</h1>
+            <p>
+                Welcome to Book Nook, your cozy corner for all things books! We’re more than just an online bookstore—we’re a community of book lovers who believe in the transformative power of stories. At Book Nook, we aim to ignite your imagination, inspire your heart, and fuel your love for reading.
+
+                Our carefully curated collection spans every genre—from thrilling mysteries and captivating romances to timeless classics and insightful non-fiction. Whether you’re seeking your next page-turner or a meaningful gift for a fellow bookworm, Book Nook has you covered.
+
+                But we don’t just stop at delivering books. We’re passionate about creating an enjoyable and seamless shopping experience. With fast delivery, 24/7 availability, unbeatable deals, and secure payment options, your next literary adventure is just a click away.
+
+                At Book Nook, we believe that books have the power to connect, heal, and transport us to new worlds. We’re here to make that magic accessible to everyone.
+
+                Thank you for choosing Book Nook—where every story begins!
+            </p>
+            <a href="#" class="about_btn">Learn More</a>
+        </div>
+
+    </div>
+
+    <!--Books-->
+    <div id="featured" class="featured_books">
+        <h1>Featured Books</h1>
+        <div class="featured_book_box">
+
+            <!-- Book Card 1 -->
+            <div class="featured_books_card">
+                <div class="featured_book_img">
+                    <img src="book_1.jpg" alt="Cover of Book 1">
+                </div>
+                <div class="featured_book_tag">
+                    <h2>Featured Books</h2>
+                    <p class="writer">John Deo</p>
+                    <div class="categories">Thriller, Horror, Romance</div>
+                    <p class="book_price">$25.50 <sub><del>$28.60</del></sub></p>
+                    <a href="#" class="f_btn">Learn More</a>
+                </div>
+            </div>
+
+            <!-- Book Card 2 -->
+            <div class="featured_books_card">
+                <div class="featured_book_img">
+                    <img src="book_2.jpg" alt="Cover of Book 2">
+                </div>
+                <div class="featured_book_tag">
+                    <h2>Featured Books</h2>
+                    <p class="writer">Jane Smith</p>
+                    <div class="categories">Fantasy, Adventure</div>
+                    <p class="book_price">$19.99 <sub><del>$22.50</del></sub></p>
+                    <a href="#" class="f_btn">Learn More</a>
+                </div>
+            </div>
+
+            <!-- Book Card 3 -->
+            <div class="featured_books_card">
+                <div class="featured_book_img">
+                    <img src="book_3.jpg" alt="Cover of Book 3">
+                </div>
+                <div class="featured_book_tag">
+                    <h2>Featured Books</h2>
+                    <p class="writer">Alex Carter</p>
+                    <div class="categories">Science Fiction</div>
+                    <p class="book_price">$14.99 <sub><del>$18.99</del></sub></p>
+                    <a href="#" class="f_btn">Learn More</a>
+                </div>
+            </div>
+
+            <!-- Book Card 4 -->
+            <div class="featured_books_card">
+                <div class="featured_book_img">
+                    <img src="book_4.jpg" alt="Cover of Book 4">
+                </div>
+                <div class="featured_book_tag">
+                    <h2>Featured Books</h2>
+                    <p class="writer">Laura Kim</p>
+                    <div class="categories">Historical Fiction</div>
+                    <p class="book_price">$29.90 <sub><del>$34.99</del></sub></p>
+                    <a href="#" class="f_btn">Learn More</a>
+                </div>
+            </div>
+
+            <!-- Book Card 5 -->
+            <div class="featured_books_card">
+                <div class="featured_book_img">
+                    <img src="book_5.jpg" alt="Cover of Book 5">
+                </div>
+                <div class="featured_book_tag">
+                    <h2>Featured Books</h2>
+                    <p class="writer">Chris Nolan</p>
+                    <div class="categories">Mystery, Suspense</div>
+                    <p class="book_price">$18.75 <sub><del>$21.00</del></sub></p>
+                    <a href="#" class="f_btn">Learn More</a>
+                </div>
+            </div>
+
+            <!-- Book Card 6 -->
+            <div class="featured_books_card">
+                <div class="featured_book_img">
+                    <img src="book_6.jpg" alt="Cover of Book 6">
+                </div>
+                <div class="featured_book_tag">
+                    <h2>Featured Books</h2>
+                    <p class="writer">Emily Zhao</p>
+                    <div class="categories">Young Adult, Fantasy</div>
+                    <p class="book_price">$24.50 <sub><del>$27.99</del></sub></p>
+                    <a href="#" class="f_btn">Learn More</a>
+                </div>
+            </div>
+
+            <!-- Book Card 7 -->
+            <div class="featured_books_card">
+                <div class="featured_book_img">
+                    <img src="book_7.png" alt="Cover of Book 7">
+                </div>
+                <div class="featured_book_tag">
+                    <h2>Featured Books</h2>
+                    <p class="writer">Robert Blake</p>
+                    <div class="categories">Self-Help, Motivation</div>
+                    <p class="book_price">$16.50 <sub><del>$19.99</del></sub></p>
+                    <a href="#" class="f_btn">Learn More</a>
+                </div>
+            </div>
+
+            <!-- Book Card 8 -->
+            <div class="featured_books_card">
+                <div class="featured_book_img">
+                    <img src="book_8.png" alt="Cover of Book 8">
+                </div>
+                <div class="featured_book_tag">
+                    <h2>Featured Books</h2>
+                    <p class="writer">Sophia Green</p>
+                    <div class="categories">Romance</div>
+                    <p class="book_price">$22.90 <sub><del>$26.50</del></sub></p>
+                    <a href="#" class="f_btn">Learn More</a>
+                </div>
+            </div>
+
+            <!-- Book Card 9 -->
+            <div class="featured_books_card">
+                <div class="featured_book_img">
+                    <img src="book_9.jpg" alt="Cover of Book 9">
+                </div>
+                <div class="featured_book_tag">
+                    <h2>Featured Books</h2>
+                    <p class="writer">Liam Brown</p>
+                    <div class="categories">Biography</div>
+                    <p class="book_price">$27.50 <sub><del>$32.00</del></sub></p>
+                    <a href="#" class="f_btn">Learn More</a>
+                </div>
+            </div>
+
+            <!-- Book Card 10 -->
+            <div class="featured_books_card">
+                <div class="featured_book_img">
+                    <img src="book_10.png" alt="Cover of Book 10">
+                </div>
+                <div class="featured_book_tag">
+                    <h2>Featured Books</h2>
+                    <p class="writer">Ava White</p>
+                    <div class="categories">Fantasy, Adventure</div>
+                    <p class="book_price">$20.00 <sub><del>$23.50</del></sub></p>
+                    <a href="#" class="f_btn">Learn More</a>
+                </div>
+            </div>
+
+            <!-- Book Card 11 -->
+            <div class="featured_books_card">
+                <div class="featured_book_img">
+                    <img src="book_11.jpg" alt="Cover of Book 11">
+                </div>
+                <div class="featured_book_tag">
+                    <h2>Featured Books</h2>
+                    <p class="writer">James Wilson</p>
+                    <div class="categories">Thriller</div>
+                    <p class="book_price">$26.50 <sub><del>$30.50</del></sub></p>
+                    <a href="#" class="f_btn">Learn More</a>
+                </div>
+            </div>
+
+            <!-- Book Card 12 -->
+            <div class="featured_books_card">
+                <div class="featured_book_img">
+                    <img src="book_12.png" alt="Cover of Book 12">
+                </div>
+                <div class="featured_book_tag">
+                    <h2>Featured Books</h2>
+                    <p class="writer">Olivia Davis</p>
+                    <div class="categories">Drama</div>
+                    <p class="book_price">$21.99 <sub><del>$25.00</del></sub></p>
+                    <a href="#" class="f_btn">Learn More</a>
+                </div>
+            </div>
+
+            <!-- Book Card 13 -->
+            <div class="featured_books_card">
+                <div class="featured_book_img">
+                    <img src="book_13.png" alt="Cover of Book 13">
+                </div>
+                <div class="featured_book_tag">
+                    <h2>Featured Books</h2>
+                    <p class="writer">Mason Wright</p>
+                    <div class="categories">Travel</div>
+                    <p class="book_price">$17.00 <sub><del>$20.00</del></sub></p>
+                    <a href="#" class="f_btn">Learn More</a>
+                </div>
+            </div>
+
+            <!-- Book Card 14 -->
+            <div class="featured_books_card">
+                <div class="featured_book_img">
+                    <img src="book_14.png" alt="Cover of Book 14">
+                </div>
+                <div class="featured_book_tag">
+                    <h2>Featured Books</h2>
+                    <p class="writer">Ella Moore</p>
+                    <div class="categories">Cookbooks</div>
+                    <p class="book_price">$30.00 <sub><del>$35.00</del></sub></p>
+                    <a href="#" class="f_btn">Learn More</a>
+                </div>
+            </div>
+
+
+            <!-- Book Card 15 -->
+            <div class="featured_books_card">
+                <div class="featured_book_img">
+                    <img src="book_15.png" alt="Cover of Book 15">
+                </div>
+                <div class="featured_book_tag">
+                    <h2>Featured Books</h2>
+                    <p class="writer">Ella Moore</p>
+                    <div class="categories">Cookbooks</div>
+                    <p class="book_price">$30.00 <sub><del>$35.00</del></sub></p>
+                    <a href="#" class="f_btn">Learn More</a>
+                </div>
+            </div>
+
+
+
+        </div>
+
+    </div>
+
+
+    <!--Arrivals Section-->
+
+    <div id="arrivals" class="arrivals">
+        <h1>New Arrivals</h1>
+        <div class="arrivals_box">
+
+            <!--1-->
+            <div class="arrivals_card">
+                <div class="arrivals_image">
+                    <img src="arrival_1.jpg">
+                </div>
+                <div class="arrivals_tag">
+                    <p>New Arrivals</p>
+                    <div class="arrivals_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="arrivals_btn">Learn More</a>
+                </div>
+            </div>
+
+            <!--2-->
+            <div class="arrivals_card">
+                <div class="arrivals_image">
+                    <img src="arrival_2.jpg">
+                </div>
+                <div class="arrivals_tag">
+                    <p>New Arrivals</p>
+                    <div class="arrivals_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="arrivals_btn">Learn More</a>
+                </div>
+            </div>
+
+
+            <!--3-->
+            <div class="arrivals_card">
+                <div class="arrivals_image">
+                    <img src="arrival_3.jpg">
+                </div>
+                <div class="arrivals_tag">
+                    <p>New Arrivals</p>
+                    <div class="arrivals_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="arrivals_btn">Learn More</a>
+                </div>
+            </div>
+
+
+            <!--4-->
+            <div class="arrivals_card">
+                <div class="arrivals_image">
+                    <img src="arrival_4.jpg">
+                </div>
+                <div class="arrivals_tag">
+                    <p>New Arrivals</p>
+                    <div class="arrivals_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="arrivals_btn">Learn More</a>
+                </div>
+            </div>
+
+
+            <!--5-->
+            <div class="arrivals_card">
+                <div class="arrivals_image">
+                    <img src="arrival_5.jpg">
+                </div>
+                <div class="arrivals_tag">
+                    <p>New Arrivals</p>
+                    <div class="arrivals_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="arrivals_btn">Learn More</a>
+                </div>
+            </div>
+
+
+            <!--6-->
+            <div class="arrivals_card">
+                <div class="arrivals_image">
+                    <img src="arrival_6.jpg">
+                </div>
+                <div class="arrivals_tag">
+                    <p>New Arrivals</p>
+                    <div class="arrivals_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="arrivals_btn">Learn More</a>
+                </div>
+            </div>
+
+
+
+
+            <!--7-->
+            <div class="arrivals_card">
+                <div class="arrivals_image">
+                    <img src="arrival_7.jpg">
+                </div>
+                <div class="arrivals_tag">
+                    <p>New Arrivals</p>
+                    <div class="arrivals_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="arrivals_btn">Learn More</a>
+                </div>
+            </div>
+
+
+
+            <!--8-->
+            <div class="arrivals_card">
+                <div class="arrivals_image">
+                    <img src="arrival_8.webp">
+                </div>
+                <div class="arrivals_tag">
+                    <p>New Arrivals</p>
+                    <div class="arrivals_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="arrivals_btn">Learn More</a>
+                </div>
+            </div>
+
+
+
+            <!--9-->
+            <div class="arrivals_card">
+                <div class="arrivals_image">
+                    <img src="arrival_9.jpg">
+                </div>
+                <div class="arrivals_tag">
+                    <p>New Arrivals</p>
+                    <div class="arrivals_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="arrivals_btn">Learn More</a>
+                </div>
+            </div>
+
+
+
+
+            <!--10-->
+            <div class="arrivals_card">
+                <div class="arrivals_image">
+                    <img src="arrival_10.jpg">
+                </div>
+                <div class="arrivals_tag">
+                    <p>New Arrivals</p>
+                    <div class="arrivals_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="arrivals_btn">Learn More</a>
+                </div>
+            </div>
+
+
+
+
+        </div>
+
+    </div>
+
+
+
+
+
+    <!-- Reviews Section -->
+    <div id="reviews" class="reviews">
+        <h1>Reviews</h1>
+        <div class="review_box">
+
+            <!-- Review One -->
+            <div class="review_card">
+                <i class="fa-solid fa-quote-right"></i>
+                <div class="card_top">
+                    <img src="review_1.png" alt="Reviewer 1">
+                </div>
+                <div class="card">
+                    <h2>John Deo</h2>
+                    <p>
+                    <p>
+                        "Incredible online bookstore! The variety and user-friendly
+                        experience make buying books so convenient. Delivery was fast
+                        and hassle-free!"
+                    </p>
+
+                    </p>
+                    <div class="review_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Review Two -->
+            <div class="review_card">
+                <i class="fa-solid fa-quote-right"></i>
+                <div class="card_top">
+                    <img src="review_2.png" alt="Reviewer 2">
+                </div>
+                <div class="card">
+                    <h2>Jane Smith</h2>
+                    <p>
+                        "Incredible online bookstore! The variety and user-friendly
+                        experience make buying books so convenient. Delivery was fast
+                        and hassle-free!"
+                    </p>
+                    <div class="review_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Review Three -->
+            <div class="review_card">
+                <i class="fa-solid fa-quote-right"></i>
+                <div class="card_top">
+                    <img src="review_3.png" alt="Reviewer 3">
+                </div>
+                <div class="card">
+                    <h2>Mike Ross</h2>
+                    <p>
+                        "I found rare classics I’d been looking for everywhere!
+                        Excellent service and a beautifully designed website. Highly recommend!"
+                    </p>
+                    <div class="review_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Review Four -->
+            <div class="review_card">
+                <i class="fa-solid fa-quote-right"></i>
+                <div class="card_top">
+                    <img src="review_4.png" alt="Reviewer 4">
+                </div>
+                <div class="card">
+                    <h2>Sara Connor</h2>
+                    <p>
+                        "This online bookstore is a gem! Affordable prices, an impressive
+                        selection, and an easy shopping experience. Will shop here again!"
+                    </p>
+                    <div class="review_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!--Banner Section-->
+
+
+    <div class="banner">
+        <a href="#" class="banner_btn">Learn More</a>
+    </div>
+
+
+
+
+    <!-- Blog Section -->
+    <div id="blog" class="blog">
+        <h1>Our Blog</h1>
+        <div class="blog_box">
+
+            <!-- Blog 1 -->
+            <div class="blog_card">
+                <div class="blog_img">
+                    <img src="blog_1.jpg" alt="Bookshelf filled with books">
+                </div>
+                <h2>Blogger</h2>
+                <p>
+                    Looking for your next favorite book? <strong>Book Nook</strong> makes
+                    it easy! Browse our wide selection of classics and bestsellers,
+                    enjoy a user-friendly platform, and get your books delivered fast.
+                    Your next literary adventure is just a few clicks away!
+                </p>
+                <div class="blog_icon">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+            </div>
+
+            <!-- Blog 2 -->
+            <div class="blog_card">
+                <div class="blog_img">
+                    <img src="blog_2.jpg" alt="Stack of books on a desk">
+                </div>
+                <h2>Blogger</h2>
+                <p>
+                    Looking for your next favorite book? <strong>Book Nook</strong> makes
+                    it easy! Browse our wide selection of classics and bestsellers,
+                    enjoy a user-friendly platform, and get your books delivered fast.
+                    Your next literary adventure is just a few clicks away!
+                </p>
+                <div class="blog_icon">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+            </div>
+
+            <!-- Blog 3 -->
+            <div class="blog_card">
+                <div class="blog_img">
+                    <img src="blog_3.jpg" alt="Open book on a cozy reading corner">
+                </div>
+                <h2>Blogger</h2>
+                <p>
+                    Looking for your next favorite book? <strong>Book Nook</strong> makes
+                    it easy! Browse our wide selection of classics and bestsellers,
+                    enjoy a user-friendly platform, and get your books delivered fast.
+                    Your next literary adventure is just a few clicks away!
+                </p>
+                <div class="blog_icon">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer_main">
+
+            <!-- Tag for Logo and Info -->
+            <div class="tag">
+                <img src="logo.png" alt="Book Nook Logo">
+                <div class="footer-info">
+                    <p>
+                        Discover your next great read with <strong>Book Nook</strong>.
+                        Explore a world of books delivered right to your doorstep.
+                        Happy reading!
+                    </p>
+                </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="tag">
+                <h1>Quick Links</h1>
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Featured</a>
+                <a href="#">Arrivals</a>
+                <a href="#">Reviews</a>
+                <a href="#">Blog</a>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="tag">
+                <h1>Contact Info</h1>
+                <a href="#"><i class="fa-solid fa-phone"></i>+1 (XXX)-XXX-XXXX</a>
+                <a href="#"><i class="fa-solid fa-phone"></i>+1 (XXX)-XXX-XXXX</a>
+                <a href="#"><i class="fa-solid fa-envelope"></i>booknook@gmail.com</a>
+            </div>
+
+            <!-- Social Links -->
+            <div class="tag">
+                <h1>Follow Us</h1>
+                <div class="social_link">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                </div>
+            </div>
+
+            <!-- Newsletter -->
+            <div class="tag">
+                <h1>Newsletter</h1>
+                <div class="search_bar">
+                    <input type="text" placeholder="Enter your email ID">
+                    <button type="submit">Submit</button>
+                </div>
+            </div>
+
+        </div>
+
+        <p class="end">Design By <span>Sahil Patel</span></p>
+    </footer>
+
+
+
+</body>
+</html>

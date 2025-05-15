@@ -1,0 +1,701 @@
+﻿*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+section{
+    width: 100%;
+    height: 100vh;
+    background-image: url(bg.png);
+    background-size: cover;
+    background-position: center;
+}
+
+    section nav {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        box-shadow: 0 0 10px #089da1;
+        background: #fff;
+        position: fixed;
+        left: 0;
+        z-index: 100;
+    }
+
+    section nav .logo img{
+        width: 100px;
+        cursor: pointer;
+        margin: 8px 0;
+    }
+
+    section nav ul{
+        list-style: none;
+    }
+
+    section nav li{
+        display: inline-block;
+        padding: 0 10px;
+    }
+
+    section nav li a{
+        text-decoration: none;
+        color: #000;
+    }
+
+    section nav li a:hover{
+        color: #089da1;
+    }
+
+    section nav .social_icon i{
+        margin: 0 5px;
+        font-size: 18px;
+    }
+
+    section nav .social_icon i:hover{
+        color: #089da1;
+        cursor: pointer;
+    }
+
+    section .main{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        position: relative;
+        top: 10%;
+    }
+
+    section .main h1{
+        position: relative;
+        font-size: 55px;
+        top: 80px;
+        left: 25px;
+    }
+
+    section .main h1 span{
+        color: #089da1;
+    }
+
+    section .main p{
+        width: 650px;
+        text-align: justify;
+        line-height: 22px;
+        position: relative;
+        top: 125px;
+        left: 25px;
+    }
+
+    section .main .main_tag .main_btn{
+        background: #089da1;
+        padding: 10px 20px;
+        position: relative;
+        top: 200px;
+        left: 25px;
+        color: #fff;
+        text-decoration: none;
+    }
+
+    section .main .main_img img{
+        width: 780px;
+        position: relative;
+        top: 90px;
+        left: 20px;
+    }
+
+
+/*Serices*/
+
+.services {
+    width: 100%;
+    height: auto;
+    margin: 35px 0;
+    font-family: 'Arial', sans-serif;
+}
+
+    .services .services_box {
+        width: 95%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 20px; /* Adds space between cards */
+        flex-wrap: wrap; /* Ensures responsiveness */
+    }
+
+        .services .services_box .services_card {
+            text-align: center;
+            width: 310px;
+            height: auto;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Softer shadow for modern feel */
+            border-radius: 15px; /* Rounded corners */
+            background: linear-gradient(145deg, #f9f9f9, #ffffff); /* Subtle gradient */
+            padding: 20px 15px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
+        }
+
+            .services .services_box .services_card:hover {
+                transform: translateY(-10px); /* Lifts card on hover */
+                box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+            }
+
+            .services .services_box .services_card i {
+                color: #089da1;
+                font-size: 45px;
+                margin-bottom: 15px;
+                cursor: pointer;
+                transition: color 0.3s ease;
+            }
+
+                .services .services_box .services_card i:hover {
+                    color: #076d71; /* Darker shade on hover */
+                }
+
+            .services .services_box .services_card h3 {
+                font-size: 22px;
+                color: #333;
+                margin-bottom: 10px;
+            }
+
+            .services .services_box .services_card p {
+                font-size: 16px;
+                color: #666;
+                line-height: 1.5; /* Improved text readability */
+                padding: 0 10px;
+            }
+
+
+    /*About Us Section*/
+    .about{
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .about .about_image img{
+        width:800px;
+    }
+
+    .about .about_tag h1{
+        font-size:50px;
+        position: relative;
+        bottom: 35px;
+    }
+
+    .about .about_tag p{
+        line-height: 22px;
+        width: 650px;
+        text-align: justify;
+        margin-bottom: 15px;
+    }
+
+    .about .about_tag .about_btn{
+        padding: 10px 20px;
+        background: #089da1;
+        color: #fff;
+        text-decoration: none;
+        position: relative;
+        top: 50px;
+    }
+
+
+    /*Books Section*/
+
+    .featured_books{
+        width: 100%;
+        height: 100vh;
+        padding: 70px 0;
+    }
+
+    .featured_books h1{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 30px;
+        font-size: 45px;
+    }
+
+    .featured_books .featured_book_box{
+        width: 95%;
+        height: 60vh;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        overflow: hidden;
+        overflow-x: scroll;
+    }
+
+    .featured_books .featured_book_box .featured_books_card{
+        width: 250px;
+        height: 420px;
+        text-align: center;
+        padding: 5px;
+        border: 1px solid #919191;
+        margin: auto 20px;
+    }
+
+    .featured_books .featured_books_card:hover{
+        box-shadow: 0 0 5px #089da1;
+    }
+
+    .featured_books .featured_book_box .featured_books_card .featured_book_img img{
+        width: 150px;
+    }
+
+    .featured_books .featured_book_box .featured_books_card .featured_book_tag h2{
+        margin:12px;
+    }
+
+    .featured_books .featured_book_box .featured_books_card .featured_book_tag .writer{
+        color: #919191;
+    }
+
+    .featured_books .featured_book_box .featured_books_card .featured_book_tag .categories{
+        color: #089da1;
+        margin-top: 8px;
+    }
+
+    .featured_books .featured_book_box .featured_books_card .featured_book_tag .book_price{
+        margin-top: 8px;
+        font-weight: bold;
+        margin-bottom: 15px;
+    }
+
+    .featured_books .featured_book_box .featured_books_card .featured_book_tag .book_price sub{
+        font-weight: 100;
+        padding: 0 5px;
+    }
+
+    .featured_books .featured_book_box .featured_books_card .featured_book_tag .f_btn{
+        padding: 8px 20px;
+        border: 2px solid #089da1;
+        text-decoration: none;
+        color: #000;
+    }
+
+    ::-webkit-scrollbar{
+        width: 10px;
+        height: 5px;
+    }
+
+    ::-webkit-scrollbar-track{
+        box-shadow: inset 0 0 8px rgba(0,0,0,0.2);
+    }
+
+    ::-webkit-scrollbar-thumb{
+        background: #089da1;
+        border-radius: 10px;
+    }
+
+    /*Arrivals Section*/
+
+    .arrivals{
+        width: 100%;
+        height: 100vh;
+        margin-bottom: 35px;
+    }
+
+    .arrivals h1{
+        font-size: 50px;
+        text-align: center;
+        margin-bottom: 35px;
+    }
+
+    .arrivals .arrivals_box{
+        width: 95%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-gap: 25px 0;
+    }
+
+
+    .arrivals .arrivals_box .arrivals_card{
+        width: 250px;
+        height: 340px;
+        text-align: center;
+        padding: 5px;
+        border: 1px solid #919191;
+        margin: auto 20px;
+    }
+
+
+    .arrivals .arrivals_box .arrivals_card:hover{
+        box-shadow: 0 0 5px #089da1;
+    }
+
+    .arrivals .arrivals_box .arrivals_card .arrivals_image{
+        width: 150px;
+        height: 220px;
+        margin: 0 auto;
+        cursor: pointer;
+        box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+        overflow: hidden;
+    }
+
+    .arrivals .arrivals_box .arrivals_card .arrivals_image img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            transition: 0.3s;
+        }
+
+    .arrivals .arrivals_box .arrivals_card:hover .arrivals_image img{
+        transform: scale(1.1);
+    }
+
+        .arrivals .arrivals_box .arrivals_card:hover .arrivals_tag p {
+            font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+            font-size: 20px;
+            margin: 8px 0;
+        }
+    .arrivals .arrivals_box .arrivals_card .arrivals_tag .arrivals_icon{
+        color: #089da1;
+        margin-bottom: 18px;
+    }
+
+    .arrivals .arrivals_box .arrivals_card .arrival_tag .arrivals_btn{
+        padding: 8px 20px;
+        border: 2px solid #089da1;
+        text-decoration: none;
+        color: #000;
+    }
+
+   
+
+    /*Reviews Section*/
+
+    .reviews{
+        width:100%;
+        height: auto;
+    }
+
+    .reviews h1{
+        text-align: center;
+        font-size: 50px;
+        margin-top: 55px;
+    }
+
+    .reviews .review_box{
+        width: 95%;
+        height: 50vh;
+        margin: 15px auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .reviews .review_box .review_card {
+            width: 400px;
+            height: 320px;
+            box-shadow: 0 0 8px #089da1;
+            padding: 15px;
+            margin: 0 12px;
+        }
+
+    .reviews .review_box .review_card i{
+        float: right;
+        font-size: 120px;
+        position: relative;
+        bottom: 20px;
+        color: #eaeaea;
+    }
+
+    .reviews .review_box .review_card .card_top img{
+        width: 80px;
+        border-radius: 50%;
+        margin-bottom: 10px;
+    }
+
+    .reviews .review_box .review_card p{
+        margin: 10px 0 10px 0;
+        text-align: justify;
+        line-height: 22px;
+    }
+
+    .reviews .review_box .review_card .card .review_icon i{
+        font-size: 16px;
+        float: left;
+        margin-top: 20px;
+        color: #089da1;
+        padding: 0 1px;
+    }
+
+
+    /*Banner Section*/
+
+    .banner{
+        width: 100%;
+        height: 50vh;
+        background-image: url(banner.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+
+    .banner .banner_btn{
+        padding: 8px 20px;
+        background: #089da1;
+        text-decoration: none;
+        color: #fff;
+        position: relative;
+        top: 70%;
+        left: 7%
+    }
+
+
+    /*Blog Section*/
+
+.blog {
+    width: 100%;
+    height: auto;
+    margin: 25px 0;
+}
+
+    .blog h1 {
+        text-align: center;
+        font-size: 50px;
+        margin-bottom: 30px;
+    }
+
+    .blog .blog_box {
+        width: 95%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* Creates 3 equal columns */
+        gap: 20px; /* Adds space between the cards */
+    }
+
+        .blog .blog_box .blog_card {
+            margin: 0 auto;
+            width: 100%; /* Adjust to fit the grid */
+            max-width: 450px; /* Limits maximum width */
+            height: auto;
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+            border-radius: 10px; /* Optional: Rounded corners for a modern look */
+            overflow: hidden; /* Prevents content overflow */
+            background-color: #fff; /* Optional: Clean background */
+        }
+
+            .blog .blog_box .blog_card .blog_img {
+                width: 100%; /* Adjusts to the card's width */
+                height: 300px;
+                overflow: hidden;
+            }
+
+                .blog .blog_box .blog_card .blog_img img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    object-position: center;
+                }
+
+               .blog .blog_box .blog_card .blog_tag{
+                   padding: 20px;
+               }
+
+            .blog .blog_box .blog_card h2 {
+                text-align: center;
+                font-size: 20px;
+                margin: 10px 0;
+                color: #089da1;
+            }
+
+            .blog .blog_box .blog_card p {
+                font-size: 14px; /* Compact text size */
+                line-height: 1.6; /* Enhances readability */
+                padding: 10px 15px;
+                color: #333;
+            }
+
+            .blog .blog_box .blog_card .blog_icon {
+                display: flex;
+                justify-content: space-between; /* Ensures proper alignment */
+                padding: 0 15px 15px 15px;
+                color: #089da1; /* Optional: Add color for icons */
+            }
+
+/*Footer Section*/
+footer {
+    width: 100%;
+    background: linear-gradient(135deg, #089da1, #056d73); /* Adds a modern gradient background */
+    color: white;
+    padding: 40px 0; /* Creates space around the footer */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Distributes elements evenly */
+    align-items: flex-start;
+}
+
+    footer .footer_main {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between; /* Adds space between columns */
+    }
+
+        footer .footer_main .tag {
+            flex: 1 1 200px; /* Ensures responsive column behavior */
+            margin: 20px;
+            text-align: center; /* Centers content in each column */
+        }
+
+            footer .footer_main .tag img {
+                width: 120px; /* Slightly larger logo for visibility */
+                margin-bottom: 15px;
+            }
+
+            footer .footer_main .tag h1 {
+                font-size: 20px;
+                color: #fff;
+                margin-bottom: 15px;
+                text-transform: uppercase; /* Adds a clean, professional touch */
+                letter-spacing: 1px;
+                border-bottom: 2px solid #fff; /* Underlines heading */
+                display: inline-block;
+                padding-bottom: 5px;
+            }
+
+            footer .footer_main .tag p {
+                line-height: 1.8;
+                font-size: 14px;
+                color: #f0f0f0;
+                margin-bottom: 10px;
+            }
+
+            footer .footer_main .tag a {
+                display: block;
+                color: #f0f0f0;
+                text-decoration: none;
+                margin: 5px 0;
+                font-size: 14px;
+                transition: color 0.3s ease;
+            }
+
+                footer .footer_main .tag a:hover {
+                    color: #ffd700; /* Adds a gold highlight effect on hover */
+                }
+
+            footer .footer_main .tag .social_link i {
+                font-size: 18px;
+                color: #fff;
+                margin: 0 10px;
+                transition: transform 0.3s ease, color 0.3s ease;
+            }
+
+                footer .footer_main .tag .social_link i:hover {
+                    color: #ffd700; /* Hover effect for icons */
+                    transform: scale(1.2); /* Slight zoom effect */
+                }
+
+            footer .footer_main .tag .search_bar {
+                width: 100%;
+                max-width: 300px;
+                display: flex;
+                margin: 0 auto;
+                border-radius: 30px;
+                overflow: hidden; /* Keeps the elements neatly within the bar */
+                background-color: #fff;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Adds subtle depth */
+            }
+
+                footer .footer_main .tag .search_bar input {
+                    flex: 1;
+                    border: none;
+                    outline: none;
+                    padding: 10px;
+                    font-size: 14px;
+                    color: #333;
+                    background: none;
+                }
+
+                footer .footer_main .tag .search_bar button {
+                    border: none;
+                    background-color: #089da1;
+                    color: white;
+                    padding: 10px 15px;
+                    cursor: pointer;
+                    font-size: 14px;
+                    transition: background 0.3s ease;
+                }
+
+                    footer .footer_main .tag .search_bar button:hover {
+                        background-color: #056d73; /* Darker hover color */
+                    }
+
+    footer .end {
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+        font-size: 14px;
+        color: #f0f0f0;
+    }
+
+        footer .end span {
+            color: #fff; /* Highlights the name in gold */
+            font-weight: bold;
+        }
+
+
+.search-form {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    position: relative;
+}
+
+.search-input {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #089da1;
+    border-radius: 30px;
+    width: 200px;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+    background-color: #ecf0f1;
+    color: #2C3E50;
+}
+
+    .search-input:focus {
+        width: 250px;
+        border-color: #089da1;
+        box-shadow: 0 0 8px rgba(41, 128, 185, 0.5);
+    }
+
+.search-btn {
+    background-color: #089da1;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 50%;
+    position: absolute;
+    right: -10px;
+    transition: all 0.3s ease-in-out;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+    .search-btn i {
+        font-size: 18px;
+    }
+
+    /* Hover Effects */
+    .search-btn:hover {
+        background-color: #089da1;
+        transform: translateY(-50%) scale(1.1);
+    }
+
+.search-input:hover {
+    border-color: #089da1;
+}
+
+/* Optional: Add a small shadow for the whole nav */
+nav {
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
